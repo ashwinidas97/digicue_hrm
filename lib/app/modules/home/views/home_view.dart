@@ -80,10 +80,26 @@ class HomeView extends GetView<HomeController> {
                 ),
               ),
             ),
-            SizedBox(height: 20),
+             SizedBox(height: 20),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+              Text(
+                'All Clients', // Heading
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
+              ),
+              Divider( // Adding a Divider
+              color: Colors.grey,
+              thickness: 1,
+             ),
+                ],
+              ),
+            ),
             Expanded(
               child: ListView.builder(
-                itemCount: 7, // Just one user for demonstration
+                itemCount: 7, //  User for demonstration
                 itemBuilder: (context, index) {
                   return Padding(
                     padding: const EdgeInsets.all(16.0),
