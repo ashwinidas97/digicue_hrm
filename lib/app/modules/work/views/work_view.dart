@@ -56,9 +56,7 @@ class WorkView extends GetView<WorkController> {
                           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
                         ),
                         SizedBox(height: 5),
-                        // You can add a Text widget or a TextFormField widget here to display the selected start date
-                        // For example:
-                        // Text('Selected Date: ${controller.selectedStartDate}')
+                        
                       ],
                     ),
                   ),
@@ -136,18 +134,11 @@ class WorkView extends GetView<WorkController> {
                       style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
                     ),
                   ),
-                  DropdownButton<String>(
-                    value: 'On Track',
-                    style: TextStyle(color: Colors.white), // Change text color to white
-                    dropdownColor: Colors.grey.shade900, // Set dropdown background color
-                    onChanged: (String? newValue) {},
-                    items: <String>['On Track', 'Delayed', 'Completed on Time'].map<DropdownMenuItem<String>>((String value) {
-                      return DropdownMenuItem<String>(
-                        value: value,
-                        child: Text(value),
-                      );
-                    }).toList(),
+                   Text(
+                    'On Track', 
+                    style: TextStyle(color: Colors.grey[500], fontSize: 16), 
                   ),
+                  
                 ],
               ),
             ],
