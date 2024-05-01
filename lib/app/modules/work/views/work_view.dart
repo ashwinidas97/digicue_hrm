@@ -45,40 +45,40 @@ class WorkView extends GetView<WorkController> {
                 style: TextStyle(color: Colors.grey[500], fontSize: 16),
               ),
               SizedBox(height: 20),
-              Row(
-                children: [
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Start Date:',
-                          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
-                        ),
-                        SizedBox(height: 5),
+              // Row(
+              //   children: [
+              //     Expanded(
+              //       child: Column(
+              //         crossAxisAlignment: CrossAxisAlignment.start,
+              //         children: [
+              //           Text(
+              //             'Start Date:',
+              //             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
+              //           ),
+              //           SizedBox(height: 5),
                         
-                      ],
-                    ),
-                  ),
-                  IconButton(
-                    onPressed: () {
-                      showDatePicker(
-                        context: context,
-                        initialDate: DateTime.now(),
-                        firstDate: DateTime(2020),
-                        lastDate: DateTime(2100),
-                        builder: (BuildContext context, Widget? child) {
-                          return Theme(
-                            data: ThemeData.dark(),
-                            child: child!,
-                          );
-                        },
-                      );
-                    },
-                    icon: Icon(Icons.calendar_today, color: Colors.white),
-                  ),
-                ],
-              ),
+              //         ],
+              //       ),
+              //     ),
+              //     IconButton(
+              //       onPressed: () {
+              //         showDatePicker(
+              //           context: context,
+              //           initialDate: DateTime.now(),
+              //           firstDate: DateTime(2020),
+              //           lastDate: DateTime(2100),
+              //           builder: (BuildContext context, Widget? child) {
+              //             return Theme(
+              //               data: ThemeData.dark(),
+              //               child: child!,
+              //             );
+              //           },
+              //         );
+              //       },
+              //       icon: Icon(Icons.calendar_today, color: Colors.white),
+              //     ),
+              //   ],
+              // ),
               SizedBox(height: 20),
               Text(
                 'Work Description:',
