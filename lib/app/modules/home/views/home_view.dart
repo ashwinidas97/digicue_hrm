@@ -18,6 +18,8 @@ class HomeView extends GetView<HomeController> {
             'Digicue Software Solutions',
             style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
           ),
+          centerTitle: true,
+          iconTheme: IconThemeData(color: Colors.grey),
         ),
       ),
       body: Container(

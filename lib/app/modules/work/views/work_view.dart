@@ -51,7 +51,7 @@ class WorkView extends GetView<WorkController> {
               ),
               SizedBox(height: 5),
               Text(
-                '2024-05-08', // Replace this with the actual date received from the backend
+                '2024-05-08', // Actual date received from the backend
                 style: TextStyle(color: Colors.grey[500], fontSize: 16),
               ),
               SizedBox(height: 20),
@@ -113,7 +113,6 @@ class WorkView extends GetView<WorkController> {
                     'On Track', 
                     style: TextStyle(color: Colors.grey[500], fontSize: 16), 
                   ),
-                  
                 ],
               ),
             ],
