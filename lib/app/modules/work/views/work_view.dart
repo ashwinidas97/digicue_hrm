@@ -26,22 +26,22 @@ class WorkView extends GetView<WorkController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Client Name:',
+                'Project Name:',
                 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
               ),
               SizedBox(height: 5),
               Text(
-                'John Doe',
+                'name of the work',
                 style: TextStyle(color: Colors.grey[500], fontSize: 15),
               ),
               SizedBox(height: 20),
               Text(
-                'Contact Number:',
+                'Subject:',
                 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 17),
               ),
               SizedBox(height: 5),
               Text(
-                '9098997086',
+                'Give some details of the project with small note',
                 style: TextStyle(color: Colors.grey[500], fontSize: 16),
               ),
               SizedBox(height: 20),

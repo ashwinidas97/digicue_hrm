@@ -75,7 +75,7 @@ class HomeView extends GetView<HomeController> {
                           fontSize: 14,
                           color: Colors.grey.shade500
                       ),
-                      hintText: "Search clients"
+                      hintText: "Search project"
                   ),
                 ),
               ),
@@ -87,7 +87,7 @@ class HomeView extends GetView<HomeController> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
               Text(
-                'All Clients', // Heading
+                'All Projects', // Heading
                 style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 20),
               ),
               Divider( // Adding a Divider
@@ -117,12 +117,12 @@ class HomeView extends GetView<HomeController> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'John Doe', // Client name
+                                  'Project Name', // Project name
                                   style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 15),
                                 ),
                                 SizedBox(height: 5),
                                 Text(
-                                  '9098997086', // Client number
+                                  'Subject ghhhbj jvhvjb jhbhj jhfyu', // Small Description for the project
                                   style: TextStyle(color: Colors.grey[500], fontSize: 14),
                                 ),
                               ],
